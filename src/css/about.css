@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+* {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+.BackgroundImageAbout {
+    background-image: url('../images/About.gif');
+    height: 92vh;
+    width: 60%;
+    margin-top: 8vh;
+    margin-left: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.AboutText {
+    background-color: rgba(17, 26, 51, 0.9); 
+    padding: 20px; 
+    width: 28%; 
+    position: absolute; 
+    bottom: 20%;
+    right: 15%;
+    color: aliceblue;
+    font-size: .5em; 
+    text-align: center; 
+    border: 1px solid rgb(59, 56, 179); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
+}
