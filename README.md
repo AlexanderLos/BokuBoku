@@ -1,15 +1,29 @@
-# Boryokuland React
+# Boryoku Dashboard
 
-This repository contains a React app and a simple CLI utility called **Virsu-OP** for tracking Solana wallet transfers from the terminal.
+This project provides two utilities:
 
-## Virsu-OP
+- **Dashboard** – a small Express server that serves a local web dashboard showing Solana transfers in a cyber‑punk style.
+- **Virsu-OP** – a CLI script for tracking Solana wallet transfers from the terminal.
 
-The CLI script lives in `cli/virsu-op.js` and can monitor one or more Solana addresses. It displays transfer information in a stylized, cyber‑punk fashion.
+## Running the Dashboard
 
-### Usage
+Install dependencies and start the server:
+
+```bash
+npm install
+npm start
+```
+
+Set `MONITOR_ADDRS` to a comma separated list of wallet addresses to monitor. Optionally, set `SOLANA_RPC_URL` to a custom RPC endpoint.
+
+The dashboard will be available at <http://localhost:3000>.
+
+## Virsu-OP CLI
+
+The CLI lives in `cli/virsu-op.js` and accepts one or more wallet addresses:
 
 ```bash
 node cli/virsu-op.js <ADDRESS_1> [ADDRESS_2 ...]
 ```
 
-Set `SOLANA_RPC_URL` to use a custom RPC endpoint. The script polls every 15 seconds and prints new transfers.
+Transfers are displayed in the terminal using bright colours. Set `SOLANA_RPC_URL` if you need to use a different RPC endpoint.

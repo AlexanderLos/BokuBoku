@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+body {
+  background: #0a0a0f url('images/BoryokuLanding.png') no-repeat center top fixed;
+  background-size: cover;
+  color: #e0e0e0;
+  font-family: 'Space Mono', monospace;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #d32174;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#transfers {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.transfer {
+  background: rgba(17,26,51,0.8);
+  border: 1px solid #d32174;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: #66ff99;
+  font-size: 0.9em;
+}
